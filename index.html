@@ -1,103 +1,47 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lâm Phú Quý</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tỏ Tình Crush</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <div id="fps" class="fps-counter">
-        FPS: 0
+  <audio id="bgMusic" loop>
+    <source src="./music.mp3" type="audio/mp3" />
+  </audio>
+
+  <div id="intro" class="active">
+    <button id="startBtn">
+      Anh có điều muốn nói<br />Nhấn vào đây đi
+    </button>
+  </div>
+
+  <div id="mainContent">
+    <div id="line"></div>
+
+    <div id="final" class="final">
+      <p>Cậu đồng ý làm người yêu tớ nhaaa!!! 💖</p>
+      <div class="button-group">
+        <button id="btnYes">Đồng ý</button>
+        <button id="btnNo">Không</button>
+      </div>
     </div>
-    <div class="snow"></div>
 
-    <div class="container">
-        <img src="2.jpg" alt="avatar" class="avatar" />
-
-        <div class="name">
-            wendy <span class="verified">✔</span>
-        </div>
-
-        <div class="button-container">
-            <button class="button" onclick="location.href='tel:+84773280093'">
-                <div class="grid-container">
-                    <i class="fa-solid fa-phone"></i> Gọi cho tôi
-                </div>
-            </button>
-            <button class="button" onclick="location.href='https://www.facebook.com/share/1YRJkk2Ha3/?mibextid=wwXIfr'">
-                <div class="grid-container">
-                    <i class="fab fa-facebook"></i> Facebook
-                </div>
-            </button>
-            <button class="button" onclick="location.href='https://www.tiktok.com/@bequy2'">
-                <div class="grid-container">
-                    <i class="fab fa-tiktok"></i> TikTok
-                </div>
-            </button>
-            <button class="button" onclick="location.href='https://github.com/'">
-                <div class="grid-container">
-                    <i class="fab fa-github"></i> GitHub
-                </div>
-            </button>
-        </div>
-
-        <div class="info">
-            BYPASS - OFF ICL<br />
-            FRP - GIẢI MÃ ĐIỆN THOẠI<br />
-            ZALO: 0773.280.093
-        </div>
-
-        <div class="timer">
-            Date created: <span id="timer"></span>
-        </div>
-
-        <div class="music-btn">
-            <select onchange="changeSong(this.value)">
-                <option value="">Play Music</option>
-                <option value="./music/deanhluongthien.mp3">Để Anh Lương Thiện Remix</option>
-                <option value="./music/emcuoiroia.mp3">Em Cưới Rồi À Remix</option>
-                <option value="./music/slayphonk.mp3">Slay Phonk</option>
-                <option value="./music/freemanxlow.mp3">Free Man x Low</option>
-                <option value="./music/thaproitudo.mp3">Tháp Rơi Tự Do Remix</option>
-                <option value="./music/Thoithoithoi.mp3">thời thế thời</option>
-                <option value="./music/Tamlongson.mp3">tắm lòng son</option>
-                <option value="./music/Moshimoshi.mp3">Moshimoshi</option>
-                <option value="./music/Anhda.mp3">Anhda</output>
-                <option value="./music/Muaroivaophong.mp3">mưa rơi vào phòng</option>
-            </select>
-            <audio id="bgMusic" autoplay loop hidden></audio>
-        </div>
+    <div id="msgYes" class="yesContent">
+      <h1>Cảm ơn cậu đã đồng ý!</h1>
+      <div class="gif_container">
+        <img
+          src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmo3c3l5ODh3ZGN6NHhhaDE2Mjg1ZjkwOXczdTFxbWM3dTBtaW9zaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/9XY4f3FgFTT4QlaYqa/giphy.gif"
+          alt="Cute Gif" />
+      </div>
     </div>
-    <hr class="divider">
+  </div>
 
-    <div class="app-section">
-        <h2>Các Ứng Dụng Của Tui</h2>
-        <div class="app-grid">
-            <a href="https://apps.apple.com/vn/app/devil-may-cry-peak-of-combat/id6449589065?l=vi" class="app-card" target="_blank">
-                <img src="./avtapp/app1.jpg" alt="App 1">
-                <span>Devil May Cry: Peak of Combat</span>
-            </a>
-            <a href="https://apps.apple.com/vn/app/spectra-music-visualizer/id1505140281?l=vi" class="app-card" target="_blank">
-                <img src="./avtapp/app2.jpg" alt="App 2">
-                <span>Spectra - Music Visualizer</span>
-            </a>
-            <a href="https://khoindvn.io.vn/document/DNS/khoindns.mobileconfig?sign=1" class="app-card" target="_blank">
-                <img src="./avtapp/IMG_3523 alt="IMG_3523">
-                <span>DNS LÂM PHÚ QUÝ</span>
-                </a>
-            <a href="https://appclip.apple.com/id?p=com.createwithplay.playgen3.Clip&pid=3de7fb0a99a900dc0Va&e=0" class="app-card" target="_blank">
-            <img src="./avtapp/app3.jpg" alt="app3">
-            <span> Trải Nghiệm ios 19</span>
-            </a>
-                <!-- Thêm nữa ở đây -->
-                </div>
-                </div>
-                <script src="script.js"></script>
-                </body>
-                </html>
+  <script src="script.js"></script>
+</body>
+
+</html>
