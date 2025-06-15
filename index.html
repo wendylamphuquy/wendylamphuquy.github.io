@@ -1,47 +1,44 @@
 <!DOCTYPE html>
 <html lang="vi">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tỏ Tình Crush</title>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Linh Nhi - Dịch vụ thiết kế thời trang theo yêu cầu. Liên hệ qua Zalo: 0762831210." />
+  <meta name="keywords" content="thiết kế thời trang, thời trang theo yêu cầu, Linh Nhi, may đo" />
+  <meta name="author" content="Linh Nhi" />
+  <title>Linh Nhi - Thiết kế thời trang</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@600;800&display=swap" rel="stylesheet" />
 </head>
-
 <body>
-  <audio id="bgMusic" loop>
-    <source src="./music.mp3" type="audio/mp3" />
-  </audio>
-
-  <div id="intro" class="active">
-    <button id="startBtn">
-      Anh có điều muốn nói<br />Nhấn vào đây đi
-    </button>
-  </div>
-
-  <div id="mainContent">
-    <div id="line"></div>
-
-    <div id="final" class="final">
-      <p>Cậu đồng ý làm người yêu tớ nhaaa!!! 💖</p>
-      <div class="button-group">
-        <button id="btnYes">Đồng ý</button>
-        <button id="btnNo">Không</button>
-      </div>
+  <div class="container">
+    <img src="avatar.jpg" alt="Ảnh đại diện của Linh Nhi" class="avatar" />
+    
+    <div class="name">
+      Linh Nhi
+      <img src="verified.png" alt="Huy hiệu xác minh" class="verified-badge" />
     </div>
 
-    <div id="msgYes" class="yesContent">
-      <h1>Cảm ơn cậu đã đồng ý!</h1>
-      <div class="gif_container">
-        <img
-          src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmo3c3l5ODh3ZGN6NHhhaDE2Mjg1ZjkwOXczdTFxbWM3dTBtaW9zaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/9XY4f3FgFTT4QlaYqa/giphy.gif"
-          alt="Cute Gif" />
-      </div>
+    <div class="info">
+      Thiết kế thời trang theo yêu cầu<br>
+      <address>Zalo: </address>
+    </div>
+
+    <div class="button-container">
+      <button class="button" onclick="location.href='tel:+84762831210'">
+        <i class="fa-solid fa-phone"></i> Gọi cho tôi
+      </button>
+      <button class="button" onclick="location.href='https://www.facebook.com/your-profile'">
+        <i class="fab fa-facebook"></i> Facebook
+      </button>
+      <button class="button" onclick="location.href='https://www.tiktok.com/@your-username'">
+        <i class="fab fa-tiktok"></i> TikTok
+      </button>
+      <button class="button" onclick="location.href='https://www.instagram.com/your-username'">
+        <i class="fab fa-instagram"></i> Instagram
+      </button>
     </div>
   </div>
-
-  <script src="script.js"></script>
 </body>
-
 </html>
